@@ -1,0 +1,44 @@
+h1{
+    color: rgb(253, 21, 176);
+    text-align: center;
+    background-image: none;
+    background-color: transparent;
+}
+.container{
+    display: flex;
+
+}
+body{
+    background-color: #b0e0e6;
+}
+.dogs{
+    object-fit: contain;
+    margin-left: 40px;
+    margin-top: 240px;
+    position: absolute;
+    animation: imgZoom 3.5s ease infinite;
+    animation-fill-mode: none; 
+}
+
+.animate__fadeInRight{
+    display: flex;
+    position: absolute;
+    align-content:space-between;
+    justify-content: flex-end;
+    animation: imgFade 3s ease-in-out infinite;
+}
+
+@keyframes imgFade{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 100px); }
+    100%   { transform: translate(0, -0px); }
+
+}
+
+@keyframes imgZoom{
+    0% {transform: scale(1) rotate(0deg);}
+    20% {transform: scale(1.1) rotate(15deg);}
+    40% {transform: scale(1) rotate(0deg);}
+    80% {transform: scale(1.1) rotate(-15deg);}
+    100% {transform: scale(1) rotate(0deg);}
+}
